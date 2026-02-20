@@ -1,29 +1,880 @@
-# 🏋️ Bison Fitness Club Website
+ <!DOCTYPE html>
+<html lang="en">
 
-Bison Fitness Club is a modern and responsive fitness website built using HTML, CSS, and JavaScript. The project is designed to showcase gym services, training programs, and fitness classes with an engaging and interactive user interface.
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fitlife - Work Hard To Get Better Life</title>
 
----
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
 
-## 🚀 Features
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./modal-style.css">
 
-- ✅ Fully Responsive Design (Mobile + Desktop)
-- ✅ Interactive Class Cards with Popup Modals
-- ✅ About Section with "Explore More" Popup
-- ✅ Smooth Animations & Scroll Effects
-- ✅ Contact Form Section
-- ✅ Dark Theme with Modern UI
-- ✅ Clean and Structured Code
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Catamaran:wght@600;700;800;900&family=Rubik:wght@400;500;800&display=swap"
+    rel="stylesheet">
 
----
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="./assets/images/hero-banner.png">
+  <link rel="preload" as="image" href="./assets/images/hero-circle-one.png">
+  <link rel="preload" as="image" href="./assets/images/hero-circle-two.png">
+  <link rel="preload" as="image" href="./assets/images/heart-rate.svg">
+  <link rel="preload" as="image" href="./assets/images/calories.svg">
 
-## 🛠️ Technologies Used
+</head>
 
-- HTML5  
-- CSS3  
-- JavaScript (Vanilla JS)  
-- Ionicons  
-- SMTP.js  
+<body id="top">
 
----
+  <!-- 
+    - #HEADER
+  -->
 
-## 📂 Project Structure
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="#" class="logo">
+        <ion-icon name="barbell-sharp" aria-hidden="true"></ion-icon>
+
+        <span class="span">Bison Fitness Club</span>
+      </a>
+
+      <nav class="navbar" data-navbar>
+
+        <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+          <ion-icon name="close-sharp" aria-hidden="true"></ion-icon>
+        </button>
+
+        <ul class="navbar-list">
+
+          <li>
+            <a href="#home" class="navbar-link active" data-nav-link>Home</a>
+          </li>
+
+          <li>
+            <a href="#about" class="navbar-link" data-nav-link>About Us</a>
+          </li>
+
+          <li>
+            <a href="#class" class="navbar-link" data-nav-link>Classes</a>
+          </li>
+
+          <li>
+            <a href="#blog" class="navbar-link" data-nav-link>Blog</a>
+          </li>
+
+          <li>
+            <a href="#contact" class="navbar-link" data-nav-link>Contact Us</a>
+          </li>
+
+        </ul>
+
+      </nav>
+
+      <a href="#contact" class="btn btn-secondary">Join Now</a>
+
+      <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </button>
+
+    </div>
+  </header>
+
+
+
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="section hero bg-dark has-after has-bg-image" id="home" aria-label="hero" data-section
+        style="background-image: url('./assets/images/hero-bg.png')">
+        <div class="container">
+
+          <div class="hero-content">
+
+            <p class="hero-subtitle">
+              <strong class="strong">The Best</strong>Fitness Club
+            </p>
+
+            <h1 class="h1 hero-title">Work Hard To Get Better Life</h1>
+
+            <p class="section-text">
+              A modern fitness center dedicated to helping you build strength, stay healthy, and achieve your fitness goals.
+            </p>
+
+            <a href="#contact" class="btn btn-primary">Get Started</a>
+
+          </div>
+
+          <div class="hero-banner">
+
+            <img src="./assets/images/hero-banner.png" width="660" height="753" alt="hero banner" class="w-100">
+
+            <img src="./assets/images/hero-circle-one.png" width="666" height="666" aria-hidden="true" alt=""
+              class="circle circle-1">
+            <img src="./assets/images/hero-circle-two.png" width="666" height="666" aria-hidden="true" alt=""
+              class="circle circle-2">
+
+            <img src="./assets/images/heart-rate.svg" width="255" height="270" alt="heart rate"
+              class="abs-img abs-img-1">
+            <img src="./assets/images/calories.svg" width="348" height="224" alt="calories" class="abs-img abs-img-2">
+
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #ABOUT
+      -->
+
+      <section class="section about" id="about" aria-label="about">
+        <div class="container">
+
+          <div class="about-banner has-after">
+            <img src="./assets/images/about-banner.png" width="660" height="648" loading="lazy" alt="about banner"
+              class="w-100">
+
+            <img src="./assets/images/about-circle-one.png" width="660" height="534" loading="lazy" aria-hidden="true"
+              alt="" class="circle circle-1">
+            <img src="./assets/images/about-circle-two.png" width="660" height="534" loading="lazy" aria-hidden="true"
+              alt="" class="circle circle-2">
+
+            <img src="./assets/images/fitness.png" width="650" height="154" loading="lazy" alt="fitness"
+              class="abs-img w-100">
+          </div>
+
+          <div class="about-content">
+
+            <p class="section-subtitle">About Us</p>
+
+            <h2 class="h2 section-title">Welcome To Our Fitness Gym</h2>
+
+            <p class="section-text">
+              Welcome to Bison Fitness Club, where fitness meets motivation, discipline, and transformation. We are more than just a gym — we are a community dedicated to helping you achieve your health and fitness goals in a supportive and energetic environment.
+Our state-of-the-art facility is equipped with modern workout machines, free weights, and dedicated spaces for cardio, strength training, and functional fitness. Whether you are a beginner taking your first step toward a healthier lifestyle or an experienced athlete aiming to push your limits, we have something for everyone.
+At Bison Fitness Club, our certified trainers are committed to guiding, motivating, and supporting you throughout your fitness journey. We offer personalized training programs, group classes, and expert guidance to ensure you stay consistent, confident, and strong.
+Join us today and take the first step toward a fitter, healthier, and more confident you!
+            </p>
+
+            <p class="section-text">
+              Train. Transform. Triumph.
+            </p>
+
+            <div class="wrapper">
+
+              <div class="about-coach">
+
+                <figure class="coach-avatar">
+                  <img src=".\assets\images\about-coach.jfif" width="65" height="65" loading="lazy" alt="Trainer">
+                </figure>
+
+                <div>
+                  <h3 class="h3 coach-name">HeisenBerg</h3>
+
+                  <p class="coach-title">Our Coach</p>
+                </div>
+
+              </div>
+
+              <a href="#" class="btn btn-primary" id="explore-more-btn">Explore More</a>
+
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #VIDEO
+      -->
+
+      <!-- <section class="section video" aria-label="video">
+        <div class="container">
+
+          <div class="video-card has-before has-bg-image"
+            style="background-image: url('./assets/images/video-banner.jpg')">
+
+            <h2 class="h2 card-title">Explore Fitness Life</h2>
+
+            <button class="play-btn" aria-label="play video">
+              <ion-icon name="play-sharp" aria-hidden="true"></ion-icon>
+            </button>
+
+            <a href="#" class="btn-link has-before">Watch More</a>
+
+          </div>
+
+        </div>
+      </section> -->
+
+      <section class="section-chose-us">
+        <div class="chose-up-container">
+          <p>Why Chose Us ?</p>
+          <h3>PUSH YOUR LIMITS FORWARD</h3>
+        </div>
+        <div class="container-cards">
+          <div class="about-card">
+            <div class="about-icon">
+              <img src="./assets/images/treadmill.png" alt="">
+            </div>
+            <h3>Modern equipment</h3>
+            <p>State-of-the-art fitness equipment designed for safe, effective, and high-performance workouts.</p>
+          </div>
+          <div class="about-card">
+            <div class="about-icon">
+              <img src="./assets/images/plan.png" alt="">
+            </div>
+            <h3>Healthy nutrition plan</h3>
+            <p>Personalized and healthy nutrition plans to fuel your fitness journey the right way.</p>
+          </div>
+          <div class="about-card">
+            <div class="about-icon">
+              <img src="./assets/images/gym.png" alt="">
+            </div>
+            <h3>Professional training plan</h3>
+            <p>Professional training programs crafted to match your goals and fitness level.</p>
+          </div>
+          <div class="about-card">
+            <div class="about-icon">
+              <img src="./assets/images/heart.png" alt="">
+            </div>
+            <h3>Unique to your needs</h3>
+            <p>Workouts tailored to your unique needs, strength, and lifestyle.</p>
+          </div>
+        </div>
+
+      </section>
+
+
+      <!-- 
+        - #CLASS
+      -->
+
+      <section class="section class bg-dark has-bg-image" id="class" aria-label="class"
+        style="background-image: url('./assets/images/classes-bg.png')">
+        <div class="container">
+
+          <p class="section-subtitle">Our Classes</p>
+
+          <h2 class="h2 section-title text-center">Fitness Classes For Every Goal</h2>
+
+          <ul class="class-list has-scrollbar">
+
+            <li class="scrollbar-item">
+              <div class="class-card" data-class="weight-lifting">
+
+                <figure class="card-banner img-holder" style="--width: 416; --height: 240;">
+                  <img src="./assets/images/class-1.jpg" width="416" height="240" loading="lazy" alt="Weight Lifting"
+                    class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="title-wrapper">
+                    <img src="./assets/images/class-icon-1.png" width="52" height="52" aria-hidden="true" alt=""
+                      class="title-icon">
+
+                    <h3 class="h3">
+                      <a href="#" class="card-title">Weight Lifting</a>
+                    </h3>
+                  </div>
+
+                  <p class="card-text">
+                    Dynamic fitness classes designed for every goal.
+                  </p>
+
+                  <div class="card-progress">
+
+                    <div class="progress-wrapper">
+                      <p class="progress-label">Class Full</p>
+
+                      <span class="progress-value">85%</span>
+                    </div>
+
+                    <div class="progress-bg">
+                      <div class="progress-bar" style="width: 85%"></div>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="class-card" data-class="cardio-strength">
+
+                <figure class="card-banner img-holder" style="--width: 416; --height: 240;">
+                  <img src="./assets/images/class-2.jpg" width="416" height="240" loading="lazy" alt="Cardio & Strenght"
+                    class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="title-wrapper">
+                    <img src="./assets/images/class-icon-2.png" width="52" height="52" aria-hidden="true" alt=""
+                      class="title-icon">
+
+                    <h3 class="h3">
+                      <a href="#" class="card-title">Cardio & Strenght</a>
+                    </h3>
+                  </div>
+
+                  <p class="card-text">
+                    Train with purpose — classes built for every fitness goal
+                  </p>
+
+                  <div class="card-progress">
+
+                    <div class="progress-wrapper">
+                      <p class="progress-label">Class Full</p>
+
+                      <span class="progress-value">70%</span>
+                    </div>
+
+                    <div class="progress-bg">
+                      <div class="progress-bar" style="width: 70%"></div>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="class-card" data-class="power-yoga">
+
+                <figure class="card-banner img-holder" style="--width: 416; --height: 240;">
+                  <img src="./assets/images/class-3.jpg" width="416" height="240" loading="lazy" alt="Power Yoga"
+                    class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="title-wrapper">
+                    <img src="./assets/images/class-icon-3.png" width="52" height="52" aria-hidden="true" alt=""
+                      class="title-icon">
+
+                    <h3 class="h3">
+                      <a href="#" class="card-title">Power Yoga</a>
+                    </h3>
+                  </div>
+
+                  <p class="card-text">
+                    Every goal. Every level. Every workout.
+                  </p>
+
+                  <div class="card-progress">
+
+                    <div class="progress-wrapper">
+                      <p class="progress-label">Class Full</p>
+
+                      <span class="progress-value">90%</span>
+                    </div>
+
+                    <div class="progress-bg">
+                      <div class="progress-bar" style="width: 90%"></div>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="class-card" data-class="fitness-pack">
+
+                <figure class="card-banner img-holder" style="--width: 416; --height: 240;">
+                  <img src="./assets/images/class-4.jpg" width="416" loading="lazy" height="240" alt="The Fitness Pack"
+                    class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="title-wrapper">
+                    <img src="./assets/images/class-icon-4.png" width="52" height="52" aria-hidden="true" alt=""
+                      class="title-icon">
+
+                    <h3 class="h3">
+                      <a href="#" class="card-title">The Fitness Pack</a>
+                    </h3>
+                  </div>
+
+                  <p class="card-text">
+                    Classes that move you closer to your goals.
+                  </p>
+
+                  <div class="card-progress">
+
+                    <div class="progress-wrapper">
+                      <p class="progress-label">Class Full</p>
+
+                      <span class="progress-value">60%</span>
+                    </div>
+
+                    <div class="progress-bg">
+                      <div class="progress-bar" style="width: 60%"></div>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #BLOG
+      -->
+
+      <section class="section blog" id="blog" aria-label="blog">
+        <div class="container">
+
+          <p class="section-subtitle">Our News</p>
+
+          <h2 class="h2 section-title text-center">Latest Blog Feed</h2>
+
+          <ul class="blog-list has-scrollbar">
+
+            <li class="scrollbar-item">
+              <div class="blog-card">
+
+                <div class="card-banner img-holder" style="--width: 440; --height: 270;">
+                  <img src="./assets/images/blog-1.jpg" width="440" height="270" loading="lazy"
+                    alt="Going to the gym for the first time" class="img-cover">
+
+                  <time class="card-meta" datetime="2022-07-07">7 July 2022</time>
+                </div>
+
+                <div class="card-content">
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Going to the gym for the first time</a>
+                  </h3>
+
+                  <p class="card-text">
+                    Going to the gym for the first time is the beginning of a powerful journey toward better health and confidence. It may feel unfamiliar, but every step builds strength, discipline, and self-belief. With the right guidance, supportive trainers, and a positive environment, your first workout becomes the foundation for lasting transformation.
+                  </p>
+
+                  <a href="#" class="btn-link has-before">Read More</a>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="blog-card">
+
+                <div class="card-banner img-holder" style="--width: 440; --height: 270;">
+                  <img src="./assets/images/blog-2.jpg" width="440" height="270" loading="lazy"
+                    alt="Parturient accumsan cacus pulvinar magna" class="img-cover">
+
+                  <time class="card-meta" datetime="2022-07-07">7 July 2022</time>
+                </div>
+
+                <div class="card-content">
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Parturient accumsan cacus pulvinar magna</a>
+                  </h3>
+
+                  <p class="card-text">
+                    At our gym, we believe that strength is built through consistency, dedication, and the right guidance. Every workout, every movement, and every choice you make contributes to your overall well-being and progress. With modern equipment, professional training, and a supportive environment, we help you stay motivated, focused, and confident on your fitness journey.
+                  </p>
+
+                  <a href="#" class="btn-link has-before">Read More</a>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="blog-card">
+
+                <div class="card-banner img-holder" style="--width: 440; --height: 270;">
+                  <img src="./assets/images/blog-3.jpg" width="440" height="270" loading="lazy"
+                    alt="Risus purus namien parturient accumsan cacus" class="img-cover">
+
+                  <time class="card-meta" datetime="2022-07-07">7 July 2022</time>
+                </div>
+
+                <div class="card-content">
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Risus purus namien parturient accumsan cacus</a>
+                  </h3>
+
+                  <p class="card-text">
+                    Success in fitness is built on consistency, effort, and the right mindset. Every session you commit to strengthens not just your body, but your confidence and discipline as well. With modern facilities, expert guidance, and a motivating environment, we support you at every stage of your journey toward becoming healthier, stronger, and more confident.
+                  </p>
+
+                  <a href="#" class="btn-link has-before">Read More</a>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+      
+  <!-- 
+   - #CONTACT
+  -->
+  <section class="section contact" id="contact" aria-label="contact">
+    <form action="" method="post">
+
+      <div class="containetr">
+        <div class="contact-box">
+          <div class="contact-contant">
+            <h1 style="text-align: center; color: rgb(245, 35, 8);">Contact For More Details </h1>
+            <input type="text" placeholder="Name" id="name">
+            <input type="email" name="email" id="email" placeholder="email">
+            <input type="number" name="" id="number" placeholder="Number">
+            <textarea name="message" id="message" cols="91" rows="8" placeholder="Enter Message"></textarea>
+            <button type="submit" id="sendemail">Send Message</button>
+          </div>
+          
+        </div>
+        
+        <!-- <div class="map-box">
+          <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3561.3245689584805!2d75.72721572546364!3d26.797792129369434!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396dcb9040177ebd%3A0x51e301e4a43c8c84!2sfitness%20planet%20club!5e0!3m2!1sen!2sin!4v1673773345318!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div> -->
+          
+        </div>
+      </div>
+    </form>
+
+  </section>
+
+
+
+
+
+
+
+    </article>
+  </main>
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+
+    <div class="section footer-top bg-dark has-bg-image" style="background-image: url('./assets/images/footer-bg.png')">
+      <div class="container">
+
+        <div class="footer-brand">
+
+          <a href="#" class="logo">
+            <ion-icon name="barbell-sharp" aria-hidden="true"></ion-icon>
+
+            <span class="span">Fitlife</span>
+          </a>
+
+          <p class="footer-brand-text">
+            A fitness center with modern equipment designed to help you build strength, stay healthy, and achieve your goals.
+          </p>
+
+          <div class="wrapper">
+
+            <img src="./assets/images/footer-clock.png" width="34" height="34" loading="lazy" alt="Clock">
+
+            <ul class="footer-brand-list">
+
+              <li>
+                <p class="footer-brand-title">Monday - Friday</p>
+
+                <p>7:00Am - 10:00Pm</p>
+              </li>
+
+              <li>
+                <p class="footer-brand-title">Saturday - Sunday</p>
+
+                <p>7:00Am - 2:00Pm</p>
+              </li>
+
+            </ul>
+
+          </div>
+
+        </div>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title has-before">Our Links</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Home</a>
+          </li>
+
+          <li>
+            <a href="#about" class="footer-link">About Us</a>
+          </li>
+
+          <li>
+            <a href="#class" class="footer-link">Classes</a>
+          </li>
+
+          <li>
+            <a href="#blog" class="footer-link">Blog</a>
+          </li>
+
+          <li>
+            <a href="#contact" class="footer-link">Contact Us</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title has-before">Contact Us</p>
+          </li>
+
+          <li class="footer-list-item">
+            <div class="icon">
+              <ion-icon name="location" aria-hidden="true"></ion-icon>
+            </div>
+
+            <address class="address footer-link">
+              Bison Fitness Club, Coimbatore, Tamilnadu, India - 641402
+            </address>
+          </li>
+
+          <li class="footer-list-item">
+            <div class="icon">
+              <ion-icon name="call" aria-hidden="true"></ion-icon>
+            </div>
+
+            <div>
+              <a href="tel:18001234567" class="footer-link">1800-123-4567</a>
+
+              <a href="tel:+919876543210" class="footer-link">+91 98765 43210</a>
+            </div>
+          </li>
+
+          <li class="footer-list-item">
+            <div class="icon">
+              <ion-icon name="mail" aria-hidden="true"></ion-icon>
+            </div>
+
+            <div>
+              <a href="mailto:info@bisonfitnessclub.com" class="footer-link">info@bisonfitnessclub.com</a>
+
+              <a href="mailto:services@bisonfitnessclub.com" class="footer-link">services@bisonfitnessclub.com</a>
+            </div>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title has-before">Our Newsletter</p>
+          </li>
+
+          <li>
+            <form action="" class="footer-form">
+              <input type="email" name="email_address" aria-label="email" placeholder="Email Address" required
+                class="input-field">
+
+              <button type="submit" class="btn btn-primary" aria-label="Submit">
+                <ion-icon name="chevron-forward-sharp" aria-hidden="true"></ion-icon>
+              </button>
+            </form>
+          </li>
+
+          <li>
+            <ul class="social-list">
+
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-twitter"></ion-icon>
+                </a>
+              </li>
+
+            </ul>
+          </li>
+
+        </ul>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+
+        <p class="copyright">
+          &copy; 2026. All Rights Reserved By <a href="#" class="copyright-link">bisonfitnessclub</a>
+        </p>
+
+        <!-- <ul class="footer-bottom-list">
+
+          <li>
+            <a href="#" class="footer-bottom-link has-before">Privacy Policy</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-bottom-link has-before">Terms & Condition</a>
+          </li>
+
+        </ul> -->
+
+      </div>
+    </div>
+
+  </footer>
+
+
+
+
+
+  <!-- 
+    - #BACK TO TOP
+  -->
+
+  <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
+    <ion-icon name="caret-up-sharp" aria-hidden="true"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+<!-- Firebase SDKs -->
+<script type="module">
+  // Import Firebase
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
+  import { getFirestore } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js";
+
+  // Your Firebase config
+  const firebaseConfig = {
+  apiKey: "AIzaSyDIEHr28v0Q8sG4U6pYz7oiPOMt2GbEqnw",
+  authDomain: "bison-fitness-club.firebaseapp.com",
+  projectId: "bison-fitness-club",
+  storageBucket: "bison-fitness-club.firebasestorage.app",
+  messagingSenderId: "365308864069",
+  appId: "1:365308864069:web:9dc42337912b55107ca52c"
+};
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const db = getFirestore(app);
+
+  // Make db global if needed
+  window.db = db;
+</script>
+
+<!-- Class Modal -->
+<div id="class-modal" class="modal-overlay">
+  <div class="modal-content">
+    <span class="modal-close">&times;</span>
+    <h2 class="modal-title" id="modal-title">Class Title</h2>
+    <img id="modal-image" src="" alt="Class Image" class="modal-image">
+    <p class="modal-description" id="modal-description">Description</p>
+    <div class="modal-info">
+      <p><strong>Timing:</strong> <span id="modal-timing">Timing</span></p>
+      <p><strong>Trainer:</strong> <span id="modal-trainer">Trainer Name</span></p>
+    </div>
+  </div>
+</div>
+
+<!-- Your JS file (loaded as module for ES6 imports) -->
+<script type="module" src="./script.js"></script>
+
+<!-- Modal Popup -->
+<div class="modal-overlay" id="modal-overlay">
+  <div class="modal-container">
+    <button class="modal-close" id="modal-close">&times;</button>
+    <div class="modal-content">
+      <h2 class="modal-title">Welcome To Our Fitness Gym</h2>
+      <p class="modal-description">
+        Welcome to Bison Fitness Club, where fitness meets motivation, discipline, and transformation. We are more than just a gym — we are a community dedicated to helping you achieve your health and fitness goals in a supportive and energetic environment. Our state-of-the-art facility is equipped with modern workout machines, free weights, and dedicated spaces for cardio, strength training, and functional fitness. Whether you are a beginner taking your first step toward a healthier lifestyle or an experienced athlete aiming to push your limits, we have something for everyone. At Bison Fitness Club, our certified trainers are committed to guiding, motivating, and supporting you throughout your fitness journey. We offer personalized training programs, group classes, and expert guidance to ensure you stay consistent, confident, and strong. Join us today and take the first step toward a fitter, healthier, and more confident you!
+      </p>
+      <div class="modal-tagline">Train. Transform. Triumph.</div>
+      <div class="modal-trainer">
+        <div class="trainer-info">
+          <span class="trainer-name">HeisenBerg</span>
+          <span class="trainer-role">Our Coach</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+
+</html>
