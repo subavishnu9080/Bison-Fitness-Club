@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - Bison Fitness Club</title>
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./style.css">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Catamaran:wght@600;700;800;900&family=Rubik:wght@400;500;800&display=swap"
+    rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Catamaran:wght@600;700;800;900&family=Rubik:wght@400;500;800&display=swap"
+    rel="stylesheet">
+
+</head>
+
+<body id="top">
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="index.html" class="logo">
+        <ion-icon name="barbell-sharp" aria-hidden="true"></ion-icon>
+
+        <span class="span">Bison Fitness Club</span>
+      </a>
+
+      <nav class="navbar" data-navbar>
+
+        <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+          <ion-icon name="close-sharp" aria-hidden="true"></ion-icon>
+        </button>
+
+        <ul class="navbar-list">
+
+          <li>
+            <a href="index.html#home" class="navbar-link" data-nav-link>Home</a>
+          </li>
+
+          <li>
+            <a href="index.html#about" class="navbar-link" data-nav-link>About Us</a>
+          </li>
+
+          <li>
+            <a href="index.html#class" class="navbar-link" data-nav-link>Classes</a>
+          </li>
+
+          <li>
+            <a href="index.html#blog" class="navbar-link" data-nav-link>Blog</a>
+          </li>
+
+          <li>
+            <a href="index.html#contact" class="navbar-link" data-nav-link>Contact Us</a>
+          </li>
+
+        </ul>
+
+      </nav>
+
+      <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </button>
+
+    </div>
+  </header>
+
+  <main>
+    <article>
+
+      <!-- 
+        - #LOGIN
+      -->
+
+      <section class="login-section">
+        <div class="container">
+
+          <div class="login-form-container">
+            <h2 class="h2 section-title text-center">Login to Your Account</h2>
+
+            <form id="login-form" class="login-form">
+              <div class="form-group">
+                <label for="email">Email / Username</label>
+                <input type="text" id="email" name="email" required>
+                <span class="error-message" id="email-error"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+                <span class="error-message" id="password-error"></span>
+              </div>
+
+              <div class="form-group">
+                <a href="#" id="forgot-password-link" class="forgot-password-link">Forgot Password?</a>
+              </div>
+
+              <button type="submit" class="btn btn-primary">Login</button>
+
+              <div class="success-message" id="success-message"></div>
+            </form>
+          </div>
+
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+
+    <div class="section footer-top bg-dark has-bg-image" style="background-image: url('./assets/images/footer-bg.png')">
+      <div class="container">
+
+        <div class="footer-brand">
+
+          <a href="index.html" class="logo">
+            <ion-icon name="barbell-sharp" aria-hidden="true"></ion-icon>
+
+            <span class="span">Fitlife</span>
+          </a>
+
+          <p class="footer-brand-text">
+            A fitness center with modern equipment designed to help you build strength, stay healthy, and achieve your goals.
+          </p>
+
+          <div class="wrapper">
+
+            <img src="./assets/images/footer-clock.png" width="34" height="34" loading="lazy" alt="Clock">
+
+            <ul class="footer-brand-list">
+
+              <li>
+                <p class="footer-brand-title">Monday - Friday</p>
+
+                <p>7:00Am - 10:00Pm</p>
+              </li>
+
+              <li>
+                <p class="footer-brand-title">Saturday - Sunday</p>
+
+                <p>7:00Am - 2:00Pm</p>
+              </li>
+
+            </ul>
+
+          </div>
+
+        </div>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title has-before">Our Links</p>
+          </li>
+
+          <li>
+            <a href="index.html#home" class="footer-link">Home</a>
+          </li>
+
+          <li>
+            <a href="index.html#about" class="footer-link">About Us</a>
+          </li>
+
+          <li>
+            <a href="index.html#class" class="footer-link">Classes</a>
+          </li>
+
+          <li>
+            <a href="index.html#blog" class="footer-link">Blog</a>
+          </li>
+
+          <li>
+            <a href="index.html#contact" class="footer-link">Contact Us</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title has-before">Contact Us</p>
+          </li>
+
+          <li class="footer-list-item">
+            <div class="icon">
+              <ion-icon name="location" aria-hidden="true"></ion-icon>
+            </div>
+
+            <address class="address footer-link">
+              Bison Fitness Club, Coimbatore, Tamilnadu, India - 641402
+            </address>
+          </li>
+
+          <li class="footer-list-item">
+            <div class="icon">
+              <ion-icon name="call" aria-hidden="true"></ion-icon>
+            </div>
+
+            <div>
+              <a href="tel:18001234567" class="footer-link">1800-123-4567</a>
+
+              <a href="tel:+919876543210" class="footer-link">+91 98765 43210</a>
+            </div>
+          </li>
+
+          <li class="footer-list-item">
+            <div class="icon">
+              <ion-icon name="mail" aria-hidden="true"></ion-icon>
+            </div>
+
+            <div>
+              <a href="mailto:info@bisonfitnessclub.com" class="footer-link">info@bisonfitnessclub.com</a>
+
+              <a href="mailto:services@bisonfitnessclub.com" class="footer-link">services@bisonfitnessclub.com</a>
+            </div>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title has-before">Our Newsletter</p>
+          </li>
+
+          <li>
+            <form action="" class="footer-form">
+              <input type="email" name="email_address" aria-label="email" placeholder="Email Address" required
+                class="input-field">
+
+              <button type="submit" class="btn btn-primary" aria-label="Submit">
+                <ion-icon name="chevron-forward-sharp" aria-hidden="true"></ion-icon>
+              </button>
+            </form>
+          </li>
+
+          <li>
+            <ul class="social-list">
+
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-twitter"></ion-icon>
+                </a>
+              </li>
+
+            </ul>
+          </li>
+
+        </ul>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+
+        <p class="copyright">
+          &copy; 2026. All Rights Reserved By <a href="#" class="copyright-link">fitnessplanetclub</a>
+        </p>
+
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Forgot Password Modal -->
+  <div id="forgot-password-modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Forgot Password</h2>
+      <form id="forgot-password-form">
+        <label for="reset-email">Enter your registered email:</label>
+        <input type="email" id="reset-email" name="reset-email" required>
+        <button type="submit" class="btn btn-primary">Send Reset Link</button>
+        <div class="success-message" id="reset-success"></div>
+      </form>
+    </div>
+  </div>
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./script.js" defer></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
